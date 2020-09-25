@@ -5,6 +5,8 @@ Python is an [interpreted](https://en.wikipedia.org/wiki/Interpreted_language#:~
 
 Python is a versatile language, which lends itself to a range of applications including Web & Internet Development, Database Access, Desktop GUIs, Scientific & Numeric (including Data Analysis), Network Programming and Software and Game development.
 
+Python files are marked with the `.py` file extension.
+
 ### Grammar
 A few things to note about Python's grammar. It is:
 - Python is case sensitive.
@@ -22,6 +24,26 @@ A few things to note about Python's grammar. It is:
 
 
 ### `__main__`
+
+
+Python modules (ie files) can either be run directly (ie network-request / command line), OR imported and run by other modules as part of a larger program. When a file is run directly, the special variable `__name__` is set to `__main__`.
+
+Defining the `main` function is a necessity to start the execution of the program. It acts as the point for any program. If a module is being run directly, the module needs to execute its main function, so its common to see the following boilerplate in ["entry-point"](https://en.wikipedia.org/wiki/Entry_point) files:
+
+```Python
+if __name__ == '__main__':
+  main()
+```
+
+This essentially calls the main function when the module is run directly.
+
+```Python
+#helloworld.py
+import sys
+
+def main():
+  print sys.argv
+```
 
 ### Arguments from the command line
 
