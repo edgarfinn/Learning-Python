@@ -1,7 +1,7 @@
 # Learning-Python
 
 ## Contents
-1) [Quick introduction to Python](https://github.com/edgarfinn/Learning-Python/blob/master/QuickIntroductionToPython.md)
+1) [Introduction to Python](https://github.com/edgarfinn/Learning-Python/blob/master/IntroductionToPython.md)
   - [About Python (Overview)](#)
   - [Grammar](#)
   - [`__main__`](#)
