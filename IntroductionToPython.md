@@ -1,4 +1,4 @@
-# Quick Introduction to Python
+# Introduction to Python
 
 ### Overview
 Python is an [interpreted](https://en.wikipedia.org/wiki/Interpreted_language#:~:text=An%20interpreted%20language%20is%20a,program%20into%20machine%2Dlanguage%20instructions.), [dynamically typed](https://en.wikipedia.org/wiki/Dynamic_programming_language), [garbage-collected](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)), high-level, general-purpose programming language. Its design philosophy emphasises code readability, notable for its use of significant whitespace. It supports multiple programming paradigms, including [structured](https://en.wikipedia.org/wiki/Structured_programming) (particularly [procedural](https://en.wikipedia.org/wiki/Procedural_programming)), [object-oriented](https://en.wikipedia.org/wiki/Object-oriented_programming), and [functional](https://en.wikipedia.org/wiki/Functional_programming) programming.
