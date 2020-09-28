@@ -53,6 +53,54 @@ if __name__ == '__main__':
     main()
 ```
 
+```
+$ python helloWorld.py
+['helloWorld.py']
+argumentLength: 1
+
+$ python helloWorld.py Hi
+['helloWorld.py', 'Hi']
+argumentLength: 2
+first argument: Hi
+```
+
  In general, `len()` can tell you how long a string is, the number of elements in lists and tuples (another array-like data structure), and the number of key-value pairs in a dictionary.
 
 ### Defining Functions
+
+The `def` keyword defines a function, allocating it a name, with its parameters in parentheses. The function name and parameters are separated from the codeblock by a colon, and indentation of the code-block:
+
+```Python
+#function name is speak, it takes one argument referenced as myString
+def speak(myString):
+  # code block is indented
+  print myString  
+```
+
+Note from the below example how:
+- Indentation is also used to mark code blocks within if statements.
+- The first few lines are a comment documenting the behaviour of the function.
+- `result` could also have been defined as `s * 3`, which would have been more efficient as its only called once.
+  - The `+` and `*` operators are called 'overloaded operators' because they mean different things when applied to numbers than when applied to strings (or other data types).
+- Variables written inside a function are local to that function's namespace. So other functions within the same module could declare variables of the same names with out them being confused.
+
+```Python
+# repeat.py
+def repeat(s, exclaim):
+  """
+  Returns a string 's' three times.
+  If exclaim = true, add three exclamation marks.
+  """
+  result = s + s + s
+  if exclaim == True:
+    result = result + '!!!'
+  return result
+```
+
+```
+$ python repeat.py hello True
+hellohellohello!!!
+
+$ python repeat.py hi False
+hihihi
+```

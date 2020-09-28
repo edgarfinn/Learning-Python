@@ -1,11 +1,19 @@
 import sys
 
+def repeat(s, exclaim):
+  """
+  Returns a string 's' three times.
+  If exclaim = true, add three exclamation marks.
+  """
+  result = s + s + s
+  if exclaim == True:
+    result = result + '!!!'
+  return result
+
 def main():
-    print sys.argv
-    argumentsLength = len(sys.argv)
-    print 'argumentLength:', argumentsLength
-    if argumentsLength > 1:
-        print 'first argument:', sys.argv[1]
+    myStr = sys.argv[1]
+    myBool = sys.argv[2]
+    print repeat(myStr, myBool)
 
 if __name__ == '__main__':
     main()
