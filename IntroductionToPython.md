@@ -79,7 +79,7 @@ def speak(myString):
 
 Note from the below example how:
 - Indentation is also used to mark code blocks within if statements.
-- The first few lines are a comment documenting the behaviour of the function.
+- The first few lines are a comment describing the behaviour of the function. This is known as a docstring. These always occur as the first statement in a module, function, class, or method definition, and they become the `__doc__` special attribute of that object.
 - `result` could also have been defined as `s * 3`, which would have been more efficient as its only called once.
   - The `+` and `*` operators are called 'overloaded operators' because they mean different things when applied to numbers than when applied to strings (or other data types).
 - Variables written inside a function are local to that function's namespace. So other functions within the same module could declare variables of the same names with out them being confused.
@@ -103,4 +103,24 @@ hellohellohello!!!
 
 $ python repeat.py hi False
 hihihi
+```
+
+### Module setup
+The outermost statements in a Python module / file do its one-time setup. Those statements run from top-to-bottom the first time the module is imported somewhere, setting up its variables and functions.<br >
+At the top of the file you'll often find import statements. Then it's typical to define the `main()` function towards the bottom of the file with the functions it calls somewhere above it.
+
+
+```Python
+import sys
+
+def add(a, b):
+  # returns the sum of two numbers 'a' and 'b'
+  result = a + b
+  return result
+
+def main():
+    print add(15, 10)
+
+if __name__ == '__main__':
+    main()
 ```
