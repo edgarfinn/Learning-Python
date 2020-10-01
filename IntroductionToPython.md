@@ -10,7 +10,10 @@ Python files are marked with the `.py` file extension.
 ### Grammar
 - Python is case sensitive.
 - The end of a line marks the end of a statement (ie no semicolon required).
-- Blocks of code are grouped using indentation (as opposed to, say, curly braces).
+- Logical blocks of code are grouped using indentation (as opposed to, say, curly braces).
+  - Avoid using tabs for indentation as this complicates the indentation scheme.
+  The [official python style guide](https://www.python.org/dev/peps/pep-0008/#indentation) suggests using 4 spaces, but google's internal style guide dictates 2 spaces. 🤷‍♂️ :man_shrugging:
+
 - Comments can be denoted either as single-lines, using the `#` symbol (extending to the end of the line), or across multiple lines wrapping the comment block with three quotation marks:
 ```Python
  # This is a single-line commend
@@ -73,7 +76,7 @@ The `def` keyword defines a function, allocating it a name, with its parameters 
 ```Python
 #function name is speak, it takes one argument referenced as myString
 def speak(myString):
-  # code block is indented
+  # logical block is indented
   print myString  
 ```
 

@@ -1,19 +1,12 @@
 import sys
 
-def repeat(s, exclaim):
-  """
-  Returns a string 's' three times.
-  If exclaim = true, add three exclamation marks.
-  """
-  result = s + s + s
-  if exclaim == True:
-    result = result + '!!!'
+def add(a, b):
+  # returns the sum of two numbers 'a' and 'b'
+  result = a + b
   return result
 
 def main():
-    myStr = sys.argv[1]
-    myBool = sys.argv[2]
-    print repeat(myStr, myBool)
+    print add(15, 10)
 
 if __name__ == '__main__':
     main()
