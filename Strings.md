@@ -14,4 +14,22 @@ For example, `'hello' + ' ' + 'world'` creates a new string `'hello world'`. Aft
 ## Accessing values in a strings
 Square brackets give access to any character within a string. So where `s = 'hello'`, `s[1]` will be `'e'`.
 
-If the index passed into the square brackets falls out of the bounds of the string python will raise an error. In this respect, the Python style is to halt if it doesn't know what to do, rather than just make up a default value. 
+If the index passed into the square brackets falls out of the bounds of the string python will raise an error. In this way, the Python style is to halt if it doesn't know what to do, rather than make up a default value.
+
+The `slice` method is also handy for extracting substrings (see below).
+
+The `len('...')` method will tell you the length of a string. eg `len('hello')` will return `5`.
+
+Bracket notation and the `len()` method both also work on any sequence data types in python (strings, lists etc...).
+
+Unlike other languages such as Javascript, the `+` operator does not convert numbers (or other types) into a string (type coercion).
+
+For numbers and arithmetic, the standard `+`, `-`, `\` and `*` operators work as expected. There is no `++` operators, but `+=` and `-=` work for incrementing / decrement.
+
+For integer division, it is most correct to use double forward slashes (eg `6 // 2` would return `3`, `5 // 4` would return `1` etc...).
+
+The `print()` operator prints out one or more Python items followed by a newline. A trailing comma will omit the newline.
+
+A "raw" string literal is rpefixed with an `r`, and passes all characters through without any formatting or special treatment. For example `r'x\ny'` would evaluate to a 4-chatacter string 'r\\xny' with no newline character between x and y.
+
+Similarly, a `u` prefix allows you to write a unicode string literal.
