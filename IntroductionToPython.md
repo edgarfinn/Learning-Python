@@ -12,7 +12,7 @@ Python files are marked with the `.py` file extension.
 - The end of a line marks the end of a statement (ie no semicolon required).
 - Logical blocks of code are grouped using indentation (as opposed to, say, curly braces).
   - Avoid using tabs for indentation as this complicates the indentation scheme.
-  The [official python style guide](https://www.python.org/dev/peps/pep-0008/#indentation) suggests using 4 spaces, but google's internal style guide dictates 2 spaces. :man_shrugging:
+  - The [official python style guide](https://www.python.org/dev/peps/pep-0008/#indentation) suggests using 4 spaces, but google's internal style guide dictates 2 spaces. :man_shrugging:
 
 - Comments can be denoted either as single-lines, using the `#` symbol (extending to the end of the line), or across multiple lines wrapping the comment block with three quotation marks:
 ```Python

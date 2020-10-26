@@ -6,7 +6,11 @@ def add(a, b):
   return result
 
 def main():
-    print add(15, 10)
+    help(add)
+    if 1 < 0:
+        print ad(15, 10)
+    else:
+        print 'Hello world'
 
 if __name__ == '__main__':
     main()

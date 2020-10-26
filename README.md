@@ -7,6 +7,7 @@
   - [`__main__`](#)
   - [Arguments from the command line](#)
   - [Defining Functions](#)
+2) [Strings](https://github.com/edgarfinn/Learning-Python/blob/master/Strings.md)
   - [](#)
   - [](#)
   - [](#)
