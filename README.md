@@ -17,3 +17,5 @@
 References:
 
 [Google's Python Class](https://developers.google.com/edu/python)
+
+[Real Python](https://realpython.com/)
