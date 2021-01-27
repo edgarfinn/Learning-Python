@@ -62,10 +62,24 @@ round(1.5, 0) # = 2.0
 round(2.5, 0) # = 2.0
 ```
 
-#### Rounding with `int()`
-The `int()` function can also be used to round numbers, but will always round down by simply removing any decimal places from a float.
+#### Converting numbers (eg decimals / floats) to integers `int()`
+The `int()` function can be used to convert non-integer numbers to integers (and therefore round numbers), but beware `int()` method will always round numbers <ins>down</ins> by simply removing any decimal places.
 
 ```python
 round(2.9, 0) # = 3.0
 int(2.9) # = 2
 ````
+
+#### Converting integers to decimals / floats
+Similarly, you can convert integers to floats using the `float()` method:
+```python
+num = 78.5
+num # 78.5
+num = int(num)
+num # 78
+num = float(num)
+num # 78.0
+```
+
+## Incrementing / Decrementing
+Similar to Javascript, numbers can be incremented and decremented using `n += n` and `n -= n`, operators `n *= n` and `n /= n` also work as expected; assigning the divided / multiplied result to the existing value to the left.
