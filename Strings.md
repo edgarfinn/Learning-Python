@@ -24,12 +24,26 @@ Bracket notation and the `len()` method both also work on any sequence data type
 
 Unlike other languages such as Javascript, the `+` operator does not convert numbers (or other types) into a string (type coercion).
 
-For numbers and arithmetic, the standard `+`, `-`, `\` and `*` operators work as expected. There is no `++` operators, but `+=` and `-=` work for incrementing / decrement.
-
-For integer division, it is most correct to use double forward slashes (eg `6 // 2` would return `3`, `5 // 4` would return `1` etc...).
-
 The `print()` operator prints out one or more Python items followed by a newline. A trailing comma will omit the newline.
 
-A "raw" string literal is rpefixed with an `r`, and passes all characters through without any formatting or special treatment. For example `r'x\ny'` would evaluate to a 4-chatacter string 'r\\xny' with no newline character between x and y.
+A "raw" string literal is prefixed with an `r`, and passes all characters through without any formatting or special treatment. For example `r'x\nx'` evaluates to the length-4 string `'x\nx'` with no newline character between x and y.
+
+```pyhton
+>>> s = 'hi\nthere'
+>>> print(s)
+hi
+there
+>>> s = r'hi\nthere'
+>>> print(s)
+hi\nthere
+
+>>> s = 'x\ny'
+>>> print(s)
+x
+y
+>>> s = r'x\ny'
+>>> print(s)
+x\ny
+```
 
 Similarly, a `u` prefix allows you to write a unicode string literal.
