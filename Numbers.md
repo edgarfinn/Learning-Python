@@ -1,6 +1,11 @@
+## Basic operators
+For numbers and arithmetic, the standard `+`, `-`, `/` and `*` operators work as expected.
+
+There is no `++` operators, but `+=` and `-=` work for incrementing / decrement. Operators `n *= n` and `n /= n` also work as expected; assigning the divided / multiplied result to the existing value to the left.
+
 ## Exponents
 
-- The `**` operator can be used to multiply exponentially (to the power, eg squared, cubed etc...)
+The `**` operator can be used to multiply exponentially (to the power, eg squared, cubed etc...)
 
 ```python
 num ** power
@@ -13,7 +18,7 @@ Where `num` is the number you want to multiply, and power is the power to-which 
 3.14 ** 2 # = 9.8596
 ```
 ## Floor Division
-- For when you only want the <ins>quotient</ins> (the number before the decimal place) from a division.
+For integer division, if you only want the resulting <ins>integer</ins> (just the "quotient" / the number before the decimal place) from a division; it is most correct to use double forward slashes (eg `6 // 2` would return `3`, `5 // 4` would return `1` etc...).
 
 ```python
 5 // 2 # = 2
@@ -82,4 +87,4 @@ num # 78.0
 ```
 
 ## Incrementing / Decrementing
-Similar to Javascript, numbers can be incremented and decremented using `n += n` and `n -= n`, operators `n *= n` and `n /= n` also work as expected; assigning the divided / multiplied result to the existing value to the left.
+Similar to Javascript, numbers can be incremented and decremented using `n += n` and `n -= n`,
