@@ -24,6 +24,17 @@ Python files are marked with the `.py` file extension.
  '''
 ```
 
+Interestingly, multi-line comments can be assigned as values too:
+
+```python
+>>> s = '''
+... I am
+... a comment
+... '''
+>>> print(s)
+I am
+a comment
+```
 
 ### Imports, Command-line and `len()`
 
