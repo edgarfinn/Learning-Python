@@ -25,14 +25,18 @@ For integer division, if you only want the resulting <ins>integer</ins> (just th
 ```
 ...because 2 is the quotient of 2.5, which is the result of 5 / 2.
 
-Division: Python 2 vs Python 3
-In python 2, the maths operators wont convert numbers to floats, for example when dividing an odd number by 2, you will only get the quotient back (and not the exact float). Whereas python 3 will happily convert an integer into a float if the result of a division is not a whole number.
+## Division: Python 2 vs Python 3
+In python 2, the maths operators wont convert integers to floats, for example when dividing an odd number by 2, you will only get the quotient (whole number) back (and not the exact float). Whereas python 3 will happily convert an integer into a float if the result of a division is not a whole number.
+
+In order to do exact division in python 2, you can ensure that at least one of either the divisor or dividend (dividing or divided number) are converted to floats:
 
 For example:
 ```python
 # pyhton2
-7 / 2 # = 3 (returns only the quotient)
-7.0 / 2 # = 3.5 (because the equation started with a float)
+3 / 2 # = 1 (returns only the quotient)
+3.0 / 2 # = 1.5 (because the equation started with a float)
+float(3) / 2 # = 1.5
+3 / float(2) # = 1.5
 
 # python3
 7 / 2 # = 3.5 (converts int 7/2 into float 3.5)
