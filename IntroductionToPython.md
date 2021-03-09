@@ -10,6 +10,11 @@ Python files are marked with the `.py` file extension.
 ### Grammar
 - Python is case sensitive.
 - The end of a line marks the end of a statement (ie no semicolon required).
+- If statements are structured with the condition on the first line finished with a colon, with the corresponding code block indented, starting a line below.
+```python
+if 3 > 2:
+  print('Three is greater')
+```
 - Logical blocks of code are grouped using indentation (as opposed to, say, curly braces).
   - Avoid using tabs for indentation as this complicates the indentation scheme.
   - The [official python style guide](https://www.python.org/dev/peps/pep-0008/#indentation) suggests using 4 spaces, but google's internal style guide dictates 2 spaces. :man_shrugging:
@@ -57,11 +62,11 @@ The `sys` module is one of the many utilities included in the [Python Standard L
 import sys
 
 def main():
-    print sys.argv
+    print(sys.argv)
     argumentsLength = len(sys.argv)
-    print 'argumentLength:', argumentsLength
+    print('argumentLength:', argumentsLength)
     if argumentsLength > 1:
-        print 'first argument:', sys.argv[1]
+        print('first argument:', sys.argv[1])
 
 if __name__ == '__main__':
     main()
@@ -88,7 +93,7 @@ The `def` keyword defines a function, allocating it a name, with its parameters 
 #function name is speak, it takes one argument referenced as myString
 def speak(myString):
   # logical block is indented
-  print myString  
+  print(myString)
 ```
 
 Note from the below example how:
@@ -133,7 +138,7 @@ def add(a, b):
   return result
 
 def main():
-    print add(15, 10)
+    print(add(15, 10))
 
 if __name__ == '__main__':
     main()
