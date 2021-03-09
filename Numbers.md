@@ -57,19 +57,20 @@ round(1.618033, 4) # = 1.618, (only three decimals because the next decimal plac
 #### Rounding: Python 2 vs Python 3.
 - Python 2 will always round floats that sit on the exact half-way (ie `n.5`) to the nearest zero, for example
 
-```python
-round(1.5, 0) # = 2.0
-round(2.5, 0) # = 3.0
-```
-...rounding the float to the nearest next biggest decimal place.
-
 - Python 3 however, has been updated to reduce rounding bias by always rounding to the nearest EVEN NUMBER.
 
-
 ```python
+#python 2
+round(1.5, 0) # = 2.0
+round(2.5, 0) # = 3.0
+# ...rounding the float to the next biggest decimal place.
+
+#python 3
 round(1.5, 0) # = 2.0
 round(2.5, 0) # = 2.0
+# ...rounding the float to the nearest even integer.
 ```
+
 
 #### Converting numbers (eg decimals / floats) to integers `int()`
 The `int()` function can be used to convert non-integer numbers to integers (and therefore round numbers), but beware `int()` method will always round numbers <ins>down</ins> by simply removing any decimal places.
