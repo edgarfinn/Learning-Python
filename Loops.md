@@ -21,4 +21,32 @@ for i in range(5, 8):
 # 5
 # 6
 # 7
+
+games = ["Mario", "Earthworm Jim", "Fifa"]
+
+for game in games:
+  print(game)
+# Mario
+# Earthworm Jim
+# Fifa
 ```
+
+#### While Loops
+Very similarly declared to for loops:
+```python
+age = 3
+while age < 10:
+  print(age)
+  age += 1
+
+#  3
+#  4
+#  5
+#  6
+#  7
+#  8
+#  9
+```
+
+### Infinite loops
+Unlike javascript, python will **not always error** in the event of an infinite loop. It seems there may even be some [intentional use-cases](https://www.educba.com/python-infinite-loop/) for infinite loops. So watch out for possible unintentional infinite loops. You wont always get notified by the run time environment if you've accidentally created an infinite loop.
