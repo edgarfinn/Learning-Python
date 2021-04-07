@@ -101,3 +101,19 @@ print(helloWorld.__annotations__)
 # Hello world
 # {'return': <class 'int'>}
 ```
+
+### Local and Global variables
+
+Variables declared inside functions are local to that function by default, and not accessible outside.
+Variables declared outside of functions are global to the environment in which they were declared.
+
+```python
+myGlobalVar = 'foo'
+def myFunction():
+  myLocalVar = 'bar'
+  print(myGlobalVar)
+
+myFunction() # foo
+print(myLocalVar) # NameError: name 'myLocalVar' is not defined
+
+```
