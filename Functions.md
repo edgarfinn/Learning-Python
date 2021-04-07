@@ -104,8 +104,8 @@ print(helloWorld.__annotations__)
 
 ### Local and Global variables
 
-Variables declared inside functions are local to that function by default, and not accessible outside.
-Variables declared outside of functions are global to the environment in which they were declared.
+- Variables declared inside functions are local to that function by default, and not accessible outside.
+- Variables declared outside of functions are global to the environment in which they were declared.
 
 ```python
 myGlobalVar = 'foo'
@@ -116,4 +116,28 @@ def myFunction():
 myFunction() # foo
 print(myLocalVar) # NameError: name 'myLocalVar' is not defined
 
+```
+
+- In order to mutate a global variable from within a function, or to make a function-local variable accessible on a global level, you can use the `global` keyword.
+
+```python
+myGlobalVar = 'foo'
+def myFunction():
+  global myGlobalVar
+  myGlobalVar = 'bar'
+
+myFunction()
+print(myGlobalVar)
+```
+
+- If a global variable is declared within a function, that function **has to be invoked** in order for that variable to become globally accessible.
+
+```python
+def myFunction():
+  global myVar
+  myVar = 'foobar'
+
+print(myVar) # NameError: name 'myVar' is not defined
+myFunction()
+print(mylVar) # foobar
 ```
