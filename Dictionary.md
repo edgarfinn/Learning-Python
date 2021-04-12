@@ -54,6 +54,8 @@ myBike["year"] = 2010
 print(myBikeItems) # dict_items([('make', 'Big'), ('model', 'Bike'), ('year', 2010)])
 ```
 
+Notice that `myBikeItems` updated when `myBike["year"]` was updated
+
 Just like lists, you can iterate through these list-like references in a for loop:
 
 ```python
