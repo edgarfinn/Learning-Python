@@ -9,6 +9,7 @@
   - [Defining Functions](#)
 
 2) [Numbers](https://github.com/edgarfinn/Learning-Python/blob/master/Numbers.md)
+  - [Number basics](https://github.com/edgarfinn/Learning-Python/blob/master/Numbers.md#basics)
   - [Floor division](https://github.com/edgarfinn/Learning-Python/blob/master/Numbers.md#floor-division)
     - [Division (Python2 - vs - Python3)](https://github.com/edgarfinn/Learning-Python/blob/master/Numbers.md#division-python-2-vs-python-3)
   - [Rounding](https://github.com/edgarfinn/Learning-Python/blob/master/Numbers.md#rounding-numbers)
