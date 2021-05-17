@@ -10,8 +10,8 @@
 2) [Strings](https://github.com/edgarfinn/Learning-Python/blob/master/Strings.md)
   - [String basics](https://github.com/edgarfinn/Learning-Python/blob/master/Strings.md#strings-at-a-glance)
   - [Immutability](https://github.com/edgarfinn/Learning-Python/blob/master/Strings.md#immutabiity)
-  - [Accessing values in strings](https://github.com/edgarfinn/Learning-Python/blob/master/#accessing-values-in-a-strings)
-  - [Formatting strings](https://github.com/edgarfinn/Learning-Python/blob/master/#formatting-strings)
+  - [Accessing values in strings](https://github.com/edgarfinn/Learning-Python/blob/master/Strings.md#accessing-values-in-a-strings)
+  - [Formatting strings](https://github.com/edgarfinn/Learning-Python/blob/master/Strings.md#formatting-strings)
 
 References:
 
