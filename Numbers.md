@@ -1,12 +1,12 @@
-## Basic operators
+## Basics
+### Basic operations
 For numbers and arithmetic, the standard `+`, `-`, `/` and `*` operators work as expected.
 
 There is no `++` operators, but `+=` and `-=` work for incrementing / decrement. Operators `n *= n` and `n /= n` also work as expected; assigning the divided / multiplied result to the existing value to the left.
 
 Similar to Javascript, numbers can be incremented and decremented using `n += n` and `n -= n`,
 
-## Exponents
-
+### Exponents 
 The `**` operator can be used to multiply exponentially (to the power, eg squared, cubed etc...)
 
 ```python
