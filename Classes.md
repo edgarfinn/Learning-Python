@@ -1,9 +1,9 @@
 # Classes
 
 ## Declaring classed, and instances
-A class is declared using the `class` keyword followed by a classname (class names are typically capitalised). A class must contain at least one line of code inside its block, otherwise the code will error when you attempt to create an instance of it. (But the code block could just be a string as a work-around)
+A class is declared using the `class` keyword followed by a class name (class names are typically capitalised). A class must contain at least one line of code inside its block, otherwise the code will error when you attempt to create an instance of it. (But the code block could just be a string as a work-around)
 
-Once a class is declared, instances can be created by invoking the classname (syntactically similar to invoking a function), thereby creating an `object` from that class:
+Once a class is declared, instances can be created by invoking the class name (syntactically similar to invoking a function), thereby creating an `object` from that class:
 
 ```python
 class Dog():
