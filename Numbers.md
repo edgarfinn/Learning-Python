@@ -3,6 +3,8 @@ For numbers and arithmetic, the standard `+`, `-`, `/` and `*` operators work as
 
 There is no `++` operators, but `+=` and `-=` work for incrementing / decrement. Operators `n *= n` and `n /= n` also work as expected; assigning the divided / multiplied result to the existing value to the left.
 
+Similar to Javascript, numbers can be incremented and decremented using `n += n` and `n -= n`,
+
 ## Exponents
 
 The `**` operator can be used to multiply exponentially (to the power, eg squared, cubed etc...)
@@ -55,7 +57,7 @@ round(1.618033, 4) # = 1.618, (only three decimals because the next decimal plac
 ```
 
 #### Rounding: Python 2 vs Python 3.
-- Python 2 will always round floats that sit on the exact half-way (ie `n.5`) to the nearest zero, for example
+- Python 2 will always round floats that sit on the exact half-way (ie `n.5`) to the nearest zero, (see example below)
 
 - Python 3 however, has been updated to reduce rounding bias by always rounding to the nearest EVEN NUMBER.
 
@@ -90,6 +92,3 @@ num # 78
 num = float(num)
 num # 78.0
 ```
-
-## Incrementing / Decrementing
-Similar to Javascript, numbers can be incremented and decremented using `n += n` and `n -= n`,
