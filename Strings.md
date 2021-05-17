@@ -56,7 +56,7 @@ The `len('...')` method will tell you the length of a string. eg `len('hello')` 
 
 Bracket notation and the `len()` method both also work on any sequence data types in python (strings, lists etc...).
 
-Unlike other languages such as Javascript, the `+` operator does not convert numbers (or other types) into a string (type coercion).
+Unlike Javascript, the `+` operator does not convert numbers (or other types) into a string (type coercion).
 
 The `print()` operator prints out one or more Python items followed by a newline. A trailing comma will omit the newline.
 
