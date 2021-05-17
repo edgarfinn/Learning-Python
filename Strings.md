@@ -5,7 +5,7 @@
 - Single and double quotes can both be used. Singles are more common. A backslash escapes special characters as with Javascript (eg `\n`, `\"` and `\'`)
 - Double quotes can contain single quotes and vice versa without any issues.
 - Strings can span multiple lines so long as the new line is escaped by placing a backslash at the end of each breaking line.
-- Unicode is supported out "of the box"
+- Unicode is supported "out of the box"
 
 ## A few basics:
 
